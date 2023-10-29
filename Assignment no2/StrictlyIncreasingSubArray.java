@@ -1,11 +1,11 @@
 class StrictlyIncreasingSubArray{
       public static void main(String args[]){
-             int ar1[]=new int[]{ 1,2,3,2,5,1,7};
-             int k=4;
-             Contiguous(ar1,k);
+             int ar1[]=new int[]{ 1,2,2,4};
+             
+             Contiguous(ar1);
              }
 
-     static void Contiguous(int ar1[],int k){
+     static void Contiguous(int ar1[]){
             int max=Integer.MIN_VALUE;
             for(int i=0;i<ar1.length;i++){
                  int sum=ar1[i];
